@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+      .grid-container {
+        height: 748px;
+        width: 748px;
+        background-color: #000;
+        /* position: absolute;
+        top: 25%;
+        left: 25%; */
+        display: grid;
+        grid-template-columns: 2fr 1.5fr 1fr 30px;
+        grid-template-rows: 2.5fr 1fr 1fr 20px;
+        gap: 9px;
+      }
+      .red {
+        background-color: red;
+      }
+      .grey {
+        background-color: #f0f1ec;
+      }
+      .yellow {
+        background-color: #f9d01e;
+      }
+      .blue {
+        background-color: #004592;
+      }
+      .black {
+        background-color: #232629;
+      }
+      #one {
+        grid-column: span 3;
+      }
+      #two {
+        grid-row: span 2;
+      }
+      #three {
+        grid-row: span 2;
+        grid-column: span 2;
+      }
+      #four {
+        grid-row: span 2;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Write your HTML here -->
+    <div class="grid-container">
+      <div class="grid-item red"></div>
+      <div class="grid-item grey" id="one"></div>
+      <div class="grid-item grey" id="two"></div>
+      <div class="grid-item grey" id="three"></div>
+      <div class="grid-item blue"></div>
+      <div class="grid-item grey" id="four"></div>
+      <div class="grid-item grey"></div>
+      <div class="grid-item yellow"></div>
+      <div class="grid-item black"></div>
+    </div>
+  </body>
+</html>

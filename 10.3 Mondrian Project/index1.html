@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Painting</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container {
+        display: grid;
+        width: 450px;
+        height: 600px;
+        background-color: #000;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(14, 1fr);
+        gap: 5px;
+        border: 10px solid silver;
+      }
+      .grid-item {
+        background-color: aqua;
+      }
+      .white {
+        background-color: antiquewhite;
+      }
+      .red {
+        background-color: red;
+      }
+      .grey {
+        background-color: #f0f1ec;
+      }
+      .yellow {
+        background-color: #f9d01e;
+      }
+      .blue {
+        background-color: #004592;
+      }
+      .black {
+        background-color: #232629;
+      }
+      .white1 {
+        grid-row: span 3;
+      }
+      .yellow1 {
+        grid-column: span 3;
+      }
+      .white2 {
+        grid-column: span 3;
+      }
+      .white3 {
+        grid-column: span 2;
+      }
+      .white4 {
+        grid-row: span 2;
+      }
+      .white5 {
+        grid-row: span 2;
+        grid-column: span 2;
+      }
+      .black1 {
+        grid-row: span 2;
+        grid-column: span 2;
+      }
+      .red1 {
+        grid-row: span 4;
+        grid-column: span 4;
+      }
+      .white6 {
+        grid-row: span 3;
+      }
+      .yellow2 {
+        grid-column: span 2;
+      }
+      .black2 {
+        grid-row: span 2;
+      }
+      .white7 {
+        grid-row: span 2;
+      }
+      .white8 {
+        grid-row: span 2;
+      }
+      .white9 {
+        grid-column: span 2;
+      }
+      .red2 {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+      .blue1 {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+      .white10 {
+        grid-row: span 2;
+      }
+      .white11 {
+        grid-column: span 2;
+      }
+      .yellow3 {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+      .yellow4 {
+        grid-row: span 2;
+      }
+      .white12 {
+        grid-column: span 2;
+      }
+      .yellow5 {
+        grid-row: span 2;
+      }
+      .yellow6 {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+      .white13 {
+        grid-column: span 2;
+      }
+      .white14 {
+        grid-row: span 2;
+      }
+      .red3 {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+      .blue2 {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+      .white15 {
+        grid-column: span 2;
+      }
+      .white16 {
+        grid-row: span 3;
+      }
+      .blue3 {
+        grid-column: span 4;
+        grid-row: span 4;
+      }
+      .white17 {
+        grid-row: span 2;
+      }
+      .white18 {
+        grid-row: span 2;
+      }
+      .black3 {
+        grid-row: span 2;
+      }
+      .yellow7 {
+        grid-row: span 2;
+      }
+      .black5 {
+        grid-row: span 2;
+        grid-column: span 2;
+      }
+      .white19 {
+        grid-row: span 2;
+        grid-column: span 2;
+      }
+      .white20 {
+        grid-row: span 3;
+      }
+      .white21 {
+        grid-row: span 2;
+      }
+      .white22 {
+        grid-column: span 2;
+      }
+      .white23 {
+        grid-column: span 3;
+      }
+      .yellow9 {
+        grid-column: span 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="grid-item white white1"></div>
+      <div class="grid-item yellow yellow1"></div>
+      <div class="grid-item white white2"></div>
+      <div class="grid-item white white3"></div>
+      <div class="grid-item white white4"></div>
+      <div class="grid-item white white5"></div>
+      <div class="grid-item black black1"></div>
+      <div class="grid-item red red1"></div>
+      <div class="grid-item white white6"></div>
+      <div class="grid-item yellow yellow2"></div>
+      <div class="grid-item black black2"></div>
+      <div class="grid-item white white7"></div>
+      <div class="grid-item white white8"></div>
+      <div class="grid-item white white9"></div>
+      <div class="grid-item red red2"></div>
+      <div class="grid-item blue blue1"></div>
+      <div class="grid-item white white10"></div>
+      <div class="grid-item white white11"></div>
+      <div class="grid-item yellow yellow3"></div>
+      <div class="grid-item yellow yellow4"></div>
+      <div class="grid-item white white12"></div>
+      <div class="grid-item yellow yellow5"></div>
+      <div class="grid-item yellow yellow6"></div>
+      <div class="grid-item white white13"></div>
+      <div class="grid-item white white14"></div>
+      <div class="grid-item red red3"></div>
+      <div class="grid-item blue blue2"></div>
+      <div class="grid-item white white15"></div>
+      <div class="grid-item white white16"></div>
+      <div class="grid-item blue blue3"></div>
+      <div class="grid-item white white17"></div>
+      <div class="grid-item white white18"></div>
+      <div class="grid-item black black3"></div>
+      <div class="grid-item yellow yellow7"></div>
+      <div class="grid-item yellow yellow8"></div>
+      <div class="grid-item black black4"></div>
+      <div class="grid-item black black5"></div>
+      <div class="grid-item white white19"></div>
+      <div class="grid-item white white20"></div>
+      <div class="grid-item white white21"></div>
+      <div class="grid-item white white22"></div>
+      <div class="grid-item white white23"></div>
+      <div class="grid-item yellow yellow9"></div>
+    </div>
+  </body>
+</html>

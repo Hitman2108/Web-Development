@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex-Box</title>
+    <style>
+      .container {
+        display: flex;
+        align-items: flex-start;
+        border: 2px solid orange;
+        height: 100vh;
+        /* gap: 5px; */
+      }
+      /* div > div {
+        flex-basis: 100px;
+        background-color: aqua;
+      } */
+      .flex-item {
+        flex-basis: 100px;
+        color: white;
+      }
+      .red {
+        background-color: red;
+        text-align: center;
+        flex-grow: 0;
+        flex-shrink: 1;
+      }
+      .orange {
+        background-color: orange;
+        text-align: center;
+        flex-shrink: 0;
+      }
+      .yellow {
+        background-color: yellow;
+        text-align: center;
+      }
+      .green {
+        background-color: green;
+        text-align: center;
+      }
+      .blue {
+        background-color: blue;
+        text-align: center;
+      }
+      .indigo {
+        background-color: indigo;
+        text-align: center;
+      }
+      .violet {
+        background-color: violet;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="flex-item red">red</div>
+      <div class="flex-item orange">orange</div>
+      <div class="flex-item yellow">yellow</div>
+      <div class="flex-item green">green</div>
+      <div class="flex-item blue">blue</div>
+      <div class="flex-item indigo">indigo</div>
+      <div class="flex-item violet">violet</div>
+    </div>
+  </body>
+</html>
